@@ -1,15 +1,15 @@
-def run_match():
-    num = int(input("Enter a number between 1 to 6: "))
+def run_match(num: int) -> str:
 
     match num:
         case 1 | 2:
-            print("One or two")
+            return "One or two"
         case 3 | 4:
-            print("Three or four")
+            return "Three or four"
         case 5 | 6:
-            print("Five or six")
+            return "Five or six"
         case _:
-            print("Other")
+            return "Other"
 
 
-run_match()
+num = int(input("Enter a number between 1 to 6: "))
+print(run_match(num))
